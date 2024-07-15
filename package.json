@@ -1,0 +1,21 @@
+{
+  "name": "drizzle-mysql-commonjs",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "generate": "drizzle-kit generate",
+    "migrate": "drizzle-kit migrate"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "drizzle-orm": "^0.32.0",
+    "mysql2": "^3.10.2"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.23.0"
+  }
+}
