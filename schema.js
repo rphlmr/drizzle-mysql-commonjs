@@ -1,4 +1,11 @@
-const { int, varchar, mysqlTable } = require("drizzle-orm/mysql-core");
+const {
+  mysqlSchema,
+  int,
+  varchar,
+  mysqlTable,
+} = require("drizzle-orm/mysql-core");
+
+const mySchema = mysqlSchema("my_schema");
 
 const users = mysqlTable("users", {
   id: int("id").primaryKey().autoincrement(),
@@ -7,5 +14,6 @@ const users = mysqlTable("users", {
 });
 
 module.exports = {
+  mySchema,
   users,
 };
